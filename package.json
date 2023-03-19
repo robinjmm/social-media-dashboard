@@ -1,0 +1,39 @@
+{
+	"name": "social-media-dashboard",
+	"version": "1.0.0",
+	"description": "My solution for the Social Media Dashboard challenge from Frontendmentor.io",
+	"type": "module",
+	"browserslist": [
+		"defaults and supports es6-module",
+		"maintained node versions"
+	],
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/robinjmm/social-media-dashboard.git"
+	},
+	"author": "robinjmm",
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": "https://github.com/robinjmm/social-media-dashboard/issues"
+	},
+	"homepage": "https://github.com/robinjmm/social-media-dashboard#readme",
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^6.3.0",
+		"sass": "^1.59.3"
+	},
+	"devDependencies": {
+		"@fullhuman/postcss-purgecss": "^5.0.0",
+		"eslint": "^8.36.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.27.5",
+		"postcss": "^8.4.21",
+		"postcss-preset-env": "^8.0.1",
+		"vite": "^4.2.0",
+		"vite-plugin-html": "^3.2.0"
+	}
+}
