@@ -1,0 +1,7 @@
+@use "../base/abstracts" as *;
+
+.fa-github {
+	cursor: pointer;
+	font-size: var(--28px);
+	color: var(--text-secondary);
+}

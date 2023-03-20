@@ -5,7 +5,7 @@ body {
 	color: var(--text-primary);
 	font-family: var(--ff-primary);
 	font-size: var(--14px);
-	padding-block-start: rem(36);
+	padding-block: rem(36) rem(46);
 }
 
 .container {
@@ -47,4 +47,9 @@ main {
 		display: grid;
 		row-gap: rem(16);
 	}
+}
+
+footer {
+	margin-block-start: rem(40);
+	text-align: center;
 }
