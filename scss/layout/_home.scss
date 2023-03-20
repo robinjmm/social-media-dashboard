@@ -1,4 +1,4 @@
-@use "../base/functions" as *;
+@use "../base/abstracts" as *;
 
 body {
 	background-color: var(--bg-body);
@@ -33,4 +33,18 @@ main {
 .followers {
 	display: grid;
 	row-gap: rem(24);
+}
+
+.overview {
+	margin-block-start: rem(46);
+
+	&__heading {
+		font-size: var(--24px);
+		margin-block-end: rem(26);
+	}
+
+	&__grid {
+		display: grid;
+		row-gap: rem(16);
+	}
 }

@@ -1,0 +1,36 @@
+@use "../base/abstracts" as *;
+
+.overview-card {
+	background-color: var(--bg-card);
+	padding-block: rem(26);
+	padding-inline: rem(24);
+	font-weight: var(--fw-bold);
+	display: grid;
+	row-gap: rem(24);
+	border-radius: 5px;
+	line-height: 1;
+
+	&__group {
+		display: flex;
+		justify-content: space-between;
+		align-items: end;
+	}
+
+	&__number {
+		font-size: var(--32px);
+		color: var(--text-secondary);
+	}
+
+	&__percentage {
+		align-items: center;
+		gap: 3px;
+	}
+
+	&__success {
+		color: var(--text-accent-green);
+	}
+
+	&__fail {
+		color: var(--text-accent-red);
+	}
+}
