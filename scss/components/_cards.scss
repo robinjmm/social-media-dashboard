@@ -1,0 +1,64 @@
+@use "../base/functions" as *;
+
+.followers-card {
+	background-color: var(--bg-card);
+	text-align: center;
+	font-weight: var(--fw-bold);
+	line-height: 1;
+	padding-block-start: rem(32);
+	padding-block-end: rem(24);
+	border-radius: 5px;
+
+	&--blue {
+		@include border-top-color(var(--border-blue));
+	}
+
+	&--light-blue {
+		@include border-top-color(var(--border-light-blue));
+	}
+
+	&--red {
+		@include border-top-color(var(--border-red));
+	}
+
+	&__group {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__number {
+		font-size: var(--56px);
+		color: var(--text-secondary);
+		margin-block-end: rem(8);
+	}
+
+	&__type {
+		font-weight: var(--fw-regular);
+		font-size: var(--12px);
+		letter-spacing: 5px;
+	}
+
+	&__handle {
+		gap: rem(8);
+		margin-block-end: rem(28);
+	}
+
+	&__update {
+		gap: rem(4);
+		margin-block-start: rem(24);
+	}
+
+	&__update img {
+		width: 8px;
+		height: 4px;
+	}
+
+	&__success {
+		color: var(--text-accent-green);
+	}
+
+	&__fail {
+		color: var(--text-accent-red);
+	}
+}

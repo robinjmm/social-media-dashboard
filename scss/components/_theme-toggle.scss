@@ -1,0 +1,9 @@
+@use "../base/functions"  as *;
+
+.theme-toggle {
+	margin-block-start: rem(16);
+	font-weight: var(--fw-bold);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
