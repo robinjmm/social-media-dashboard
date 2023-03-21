@@ -14,8 +14,8 @@
 
 .toggle-slider {
 	display: block;
-	width: rem(48);
-	height: rem(24);
+	inline-size: rem(48);
+	block-size: rem(24);
 	background-color: var(--bg-toggle);
 	border-radius: rem(12);
 	position: relative;
@@ -25,14 +25,18 @@
 		display: block;
 		margin: 0;
 		content: "";
-		width: rem(18);
-		height: rem(18);
+		inline-size: rem(18);
+		block-size: rem(18);
 		background-color: var(--bg-circle);
 		border-radius: 50%;
 		right: 6px;
 		top: 50%;
 		transform: translateY(-50%);
 		transition: .2s;
+	}
+
+	@media (any-hover: hover) {
+		cursor: pointer;
 	}
 }
 
@@ -42,6 +46,5 @@
 
 #checkbox:checked + .toggle-slider::after {
 	transform: translate(-20px, -50%);
-	// changed the background using dark theme
 	background-color: var(--bg-circle);
 }

@@ -1,6 +1,8 @@
 @use "../base/abstracts" as *;
 
 body {
+	display: flex;
+	align-items: center;
 	background-color: var(--bg-body);
 	color: var(--text-primary);
 	font-family: var(--ff-primary);
@@ -10,6 +12,7 @@ body {
 
 .container {
 	inline-size: 87%;
+	max-inline-size: 1110px;
 	margin-inline: auto;
 }
 
@@ -20,6 +23,10 @@ body {
 .main-heading {
 	font-size: var(--24px);
 	color: var(--text-secondary);
+
+	@media (min-width: rem(768)) {
+		font-size: var(--28px);
+	}
 }
 
 .sub-heading {
@@ -30,6 +37,10 @@ body {
 	width: 100%;
 	height: 1px;
 	background-color: var(--bg-divider);
+
+	@media (min-width: rem(1280)) {
+		display: none;
+	}
 }
 
 main {
@@ -38,7 +49,7 @@ main {
 
 .followers {
 	display: grid;
-	row-gap: rem(24);
+	gap: rem(24);
 }
 
 .overview {
@@ -49,11 +60,23 @@ main {
 		margin-block-end: rem(26);
 	}
 
-	&__grid {
+	&__container {
 		display: grid;
-		row-gap: rem(16);
+		gap: rem(16);
 	}
 }
+
+// Class for changing layout on different screen sizes
+.mq-grid {
+	@media (min-width: rem(768)) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (min-width: rem(1280)) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
 
 footer {
 	margin-block-start: rem(40);

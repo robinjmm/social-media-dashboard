@@ -61,4 +61,11 @@
 	&__fail {
 		color: var(--text-accent-red);
 	}
+
+	&:hover {
+		@media (any-hover: hover) {
+			cursor: pointer;
+			background-color: var(--bg-card-hover);
+		}
+	}
 }
