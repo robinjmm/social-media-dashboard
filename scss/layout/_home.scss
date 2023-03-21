@@ -26,6 +26,12 @@ body {
 	font-weight: var(--fw-bold);
 }
 
+.divider {
+	width: 100%;
+	height: 1px;
+	background-color: var(--bg-divider);
+}
+
 main {
 	margin-block-start: rem(40);
 }

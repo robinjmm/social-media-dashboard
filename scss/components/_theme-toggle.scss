@@ -7,3 +7,41 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
+#checkbox {
+	display: none;
+}
+
+.toggle-slider {
+	display: block;
+	width: rem(48);
+	height: rem(24);
+	background-color: var(--bg-toggle);
+	border-radius: rem(12);
+	position: relative;
+
+	&::after {
+		position: absolute;
+		display: block;
+		margin: 0;
+		content: "";
+		width: rem(18);
+		height: rem(18);
+		background-color: var(--bg-circle);
+		border-radius: 50%;
+		right: 6px;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: .2s;
+	}
+}
+
+#checkbox:checked + .toggle-slider {
+	background: var(--bg-toggle-dark);
+}
+
+#checkbox:checked + .toggle-slider::after {
+	transform: translate(-20px, -50%);
+	// changed the background using dark theme
+	background-color: var(--bg-circle);
+}
