@@ -5,8 +5,8 @@
 	text-align: center;
 	font-weight: var(--fw-bold);
 	line-height: 1;
-	padding-block-start: rem(32);
-	padding-block-end: rem(24);
+	padding-top: rem(32);
+	padding-bottom: rem(24);
 	border-radius: 5px;
 
 	&--blue {
@@ -47,7 +47,7 @@
 	&__number {
 		font-size: var(--56px);
 		color: var(--text-secondary);
-		margin-block-end: rem(8);
+		margin-bottom: rem(8);
 	}
 
 	&__type {
@@ -58,12 +58,12 @@
 
 	&__handle {
 		gap: rem(8);
-		margin-block-end: rem(28);
+		margin-bottom: rem(28);
 	}
 
 	&__update {
 		gap: rem(4);
-		margin-block-start: rem(24);
+		margin-top: rem(24);
 	}
 
 	&__update img {

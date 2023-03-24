@@ -7,17 +7,18 @@ body {
 	color: var(--text-primary);
 	font-family: var(--ff-primary);
 	font-size: var(--14px);
-	padding-block: rem(36) rem(46);
+	padding-top: rem(36);
+	padding-bottom: rem(46);
 }
 
 .container {
-	inline-size: 87%;
-	max-inline-size: 1110px;
-	margin-inline: auto;
+	width: 87%;
+	max-width: 1110px;
+	margin: 0 auto;
 }
 
 .headings {
-	margin-block-end: rem(24);
+	margin-bottom: rem(24);
 }
 
 .main-heading {
@@ -36,7 +37,7 @@ body {
 }
 
 main {
-	margin-block-start: rem(40);
+	margin-top: rem(40);
 }
 
 .followers {
@@ -45,11 +46,11 @@ main {
 }
 
 .overview {
-	margin-block-start: rem(46);
+	margin-top: rem(46);
 
 	&__heading {
 		font-size: var(--24px);
-		margin-block-end: rem(26);
+		margin-bottom: rem(26);
 	}
 
 	&__container {
@@ -59,6 +60,6 @@ main {
 }
 
 footer {
-	margin-block-start: rem(40);
+	margin-top: rem(40);
 	text-align: center;
 }

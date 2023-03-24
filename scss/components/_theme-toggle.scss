@@ -1,7 +1,7 @@
 @use "../base/abstracts"  as *;
 
 .theme-toggle {
-	margin-block-start: rem(16);
+	margin-top: rem(16);
 	font-weight: var(--fw-bold);
 	display: flex;
 	justify-content: space-between;
@@ -15,8 +15,8 @@
 
 .toggle-slider {
 	display: block;
-	inline-size: rem(48);
-	block-size: rem(24);
+	width: rem(48);
+	height: rem(24);
 	background-color: var(--bg-toggle);
 	border-radius: rem(12);
 	position: relative;
@@ -26,8 +26,8 @@
 		display: block;
 		margin: 0;
 		content: "";
-		inline-size: rem(18);
-		block-size: rem(18);
+		width: rem(18);
+		height: rem(18);
 		background-color: var(--bg-circle);
 		border-radius: 50%;
 		right: 6px;

@@ -2,8 +2,7 @@
 
 .overview-card {
 	background-color: var(--bg-card);
-	padding-block: rem(26);
-	padding-inline: rem(24);
+	padding: rem(26) rem(24);
 	font-weight: var(--fw-bold);
 	display: grid;
 	row-gap: rem(24);
